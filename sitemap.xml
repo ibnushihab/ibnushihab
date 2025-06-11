@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://ibnushihab.vercel.app/</loc>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Artikel 1 -->
+  <url>
+    <loc>https://ibnushihab.vercel.app/The_Hidden_Weakness_of_AI_by_Ibnu_Shihab_Ash_S.pdf</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Artikel 2 -->
+  <url>
+    <loc>https://ibnushihab.vercel.app/AI_Roleplay_Exploration_Ibnu_Shihab_Ash_S.pdf</loc>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Artikel 3 -->
+  <url>
+    <loc>https://ibnushihab.vercel.app/Prompt_Ambiguity_Roleplay_By_Ibnu_Shihab_Ash_S.pdf</loc>
+    <priority>0.80</priority>
+  </url>
+</urlset>
