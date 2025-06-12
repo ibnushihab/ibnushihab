@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ibnushihab.vercel.app/sitemap.xml
