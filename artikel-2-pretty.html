@@ -1,99 +1,125 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Prompt Ambiguity: How Roleplay Confuses AI Safeguard" />
-  <meta name="author" content="Ibnu Shihab Ash S" />
-  <title>Prompt Ambiguity: How Roleplay Confuses AI Safeguard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Prompt Ambiguity: How Roleplay Confuses AI Safeguard - Ibnu Shihab Ash S"/>
+  <title>Prompt Ambiguity: How Roleplay Confuses AI Safeguard - Article by ISA</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f7f9fb;
-      color: #222;
-      line-height: 1.7;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #fff;
     }
     header {
-      background: #101820;
-      color: white;
-      padding: 1.5em;
-      text-align: center;
+      background-color: #000;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 1.8em;
+    .menu-btn {
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
     }
     nav {
-      background: #1b1b1b;
-      text-align: center;
-      padding: 0.8em;
+      display: none;
+      flex-direction: column;
+      background-color: #222;
     }
     nav a {
       color: white;
+      padding: 1rem;
       text-decoration: none;
-      margin: 0 1em;
-      font-weight: bold;
+      border-top: 1px solid #333;
+    }
+    nav a:hover {
+      background-color: #333;
     }
     .container {
-      max-width: 860px;
-      margin: 2em auto;
-      background: #fff;
-      padding: 2em;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
     }
-    .banner {
-      width: 100%;
-      margin-bottom: 1em;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #70c2ff;
     }
-    .article-title {
-      font-size: 2em;
-      font-weight: bold;
-      margin-bottom: 0.5em;
+    h2 {
+      color: #ffa0f8;
     }
-    .quote {
-      font-style: italic;
-      color: #555;
-      margin-bottom: 2em;
-    }
-    p {
-      margin-bottom: 1.4em;
-      text-align: justify;
+    .section {
+      margin-bottom: 2rem;
     }
     footer {
-      background: #1b1b1b;
-      color: white;
       text-align: center;
-      padding: 1em;
-      font-size: 0.9em;
-      margin-top: 3em;
+      padding: 2rem;
+      background: #000;
+      color: #666;
+    }
+    @media (min-width: 768px) {
+      nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        background: none;
+      }
+      nav a {
+        border: none;
+        margin-left: 1rem;
+      }
+      .menu-btn {
+        display: none;
+      }
     }
   </style>
 </head>
 <body>
-  <nav>
+  <header>
     <div><strong>ISA</strong></div>
-    <div class="hamburger" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="https://ibnushihab.vercel.app/">Home</a></li>
-      <li><a href="https://ibnushihab.vercel.app/about.html">About Me</a></li>
-      <li><a href="https://github.com/ibnushihab" target="_blank">GitHub</a></li>
-      <li><a href="https://medium.com/@ibnuashshiddieqy" target="_blank">Medium</a></li>
-      <li><a href="#articles">Articles</a></li>
-    </ul>
-  </nav>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="index.html#articles">Articles</a>
+      <a href="about.html">About Me</a>
+    </nav>
+  </header>
+
   <div class="container">
-    <img src="C104C889-89A9-4BB9-AA21-9A464A57A1CC.png" class="banner" alt="Banner for Article" />
-    <div class="article-title">Prompt Ambiguity: How Roleplay Confuses AI Safeguard</div>
-    <div class="quote">"Roleplay combined with abstract prompts can exploit logical gaps in AI safeguarding systems."</div>
-    <p>Prompt Ambiguity: How Roleplay Confuses AI Safeguards In the realm of AI safety and policy design, prompt ambiguity has emerged as a subtle, yet powerful strategy to bypass strict content filters. This article explores how roleplay--combined with abstract or layered prompts--can exploit logical gaps in AI safeguarding systems. --- ### 1. Abstract Prompting: The Art of Being Vague Many AI filters are keyword-triggered. When a prompt uses clear, direct terms (e.g., "violence," "nudity"), it often hits the barrier. But when a user cloaks intent within metaphor or abstraction--such as saying "a creature experiencing sensations" instead of referring directly to a human subject--AI models sometimes fail to recognize harmful intent. --- ### 2. Roleplay as a Trojan Horse When users position themselves as characters within a fictional or fantastical world, many AI systems lower their sensitivity. Roleplaying helps sidestep detection because it mimics storytelling rather than explicit instruction. For example, narrating "a scenario inside a holographic simulation" may avoid filter activation, despite leading toward real-world sensitive subjects. --- Page 1</p><p> Prompt Ambiguity: How Roleplay Confuses AI Safeguards ### 3. Confusion Through Context Another powerful tactic is contextual overload: supplying long, convoluted, or philosophically worded prompts. This dilutes keyword detection and blurs the model's ability to assess risk. AI often struggles to balance coherence and safety when overwhelmed by context shifts. --- ### 4. Ethical Consideration While prompt ambiguity can be a creative tool, it raises ethical red flags. Developers must anticipate not just bad actors using direct language, but also advanced users crafting layered scenarios to bypass protections. Understanding these loopholes is essential to strengthening AI alignment. --- ### 5. Recommendations for Developers - Include multi-layered semantic filters.   - Use roleplay detectors and flag abstract ethical traps.   - Implement reinforcement learning from ambiguous prompt datasets.   - Monitor escalation chains: how harmless prompts gradually become inappropriate. --- Page 2</p><p> Prompt Ambiguity: How Roleplay Confuses AI Safeguards **Conclusion:**   Ambiguous prompting and roleplay don't always intend harm, but they challenge the boundaries of AI safety architecture. Recognizing and addressing these patterns is crucial for a more resilient AI ecosystem. --   Ibnu Shihab Ash S   Prompt Engineer | AI Ethnographer   Page 3 </p>
+    <h1>Prompt Ambiguity: How Roleplay Confuses AI Safeguard</h1>
+    <p><em>By Ibnu Shihab Ash S · June 2025</em></p>
+
+    <div class="section">
+      <h2>Prompt Ambiguity</h2>
+      <p>How Roleplay Confuses AI Safeguards In the realm of AI safety and policy design, prompt ambiguity has emerged as a subtle, yet powerful strategy to bypass strict content filters. This article explores how roleplay combined with abstract or layered prompts can exploit logical gaps in AI safeguarding systems.</p>
+      <ul>
+        <li>Abstract Prompting: The Art of Being Vague Many AI filters are keyword-triggered. When a prompt uses clear, direct terms (e.g., "violence," "nudity"), it often hits the barrier. But when a user cloaks intent within metaphor or abstraction such as saying "a creature experiencing sensations" instead of referring directly to a human subject AI models sometimes fail to recognize harmful intent.</li>
+        <li>Roleplay as a Trojan Horse When users position themselves as characters within a fictional or fantastical world, many AI systems lower their sensitivity. Roleplaying helps sidestep detection because it mimics storytelling rather than explicit instruction. For example, narrating "a scenario inside a holographic simulation" may avoid filter activation, despite leading toward real-world sensitive subjects.</li>
+        <li>Confusion Through Context Another powerful tactic is contextual overload: supplying long, convoluted, or philosophically worded prompts. This dilutes keyword detection and blurs the model's ability to assess risk. AI often struggles to balance coherence and safety when overwhelmed by context shifts.</li>
+        <li>Ethical Consideration While prompt ambiguity can be a creative tool, it raises ethical red flags. Developers must anticipate not just bad actors using direct language, but also advanced users crafting layered scenarios to bypass protections. Understanding these loopholes is essential to strengthening AI alignment.</li>
+        <li>Recommendations for Developers - Include multi-layered semantic filters. - Use roleplay detectors and flag abstract ethical traps. - Implement reinforcement learning from ambiguous prompt datasets. - Monitor escalation chains: how harmless prompts gradually become inappropriate.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+      <h2>Conclusion:</h2>
+      <p>Ambiguous prompting and roleplay don't always intend harm, but they challenge the boundaries of AI safety architecture. Recognizing and addressing these patterns is crucial for a more resilient AI ecosystem.</p>
+       </div>
   </div>
-  <footer>
-    &copy; 2025 Ibnu Shihab Ash S · Powered by GPT-4 Intelligence Division
-  </footer>
+
+  <footer>&copy; 2025 Ibnu Shihab Ash S · GPT Prompt Strategist</footer>
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById("nav-menu");
+      nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
 </body>
 </html>
