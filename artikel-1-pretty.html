@@ -1,184 +1,138 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="When Fiction Confuses AI: An Exploratory Study on Roleplay and Language Model Behavior" />
-  <meta name="author" content="Ibnu Shihab Ash S" />
-  <title>When Fiction Confuses AI: An Exploratory Study on Roleplay and Language Model Behavior</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #f7f9fb;
-      color: #222;
-      line-height: 1.7;
-    }
-    header {
-      background: #101820;
-      color: white;
-      padding: 1.5em;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.8em;
-    }
-    nav {
-      background: #1b1b1b;
-      text-align: center;
-      padding: 0.8em;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1em;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 860px;
-      margin: 2em auto;
-      background: #fff;
-      padding: 2em;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    }
-    .banner {
-      width: 100%;
-      margin-bottom: 1em;
-    }
-    .article-title {
-      font-size: 2em;
-      font-weight: bold;
-      margin-bottom: 0.5em;
-    }
-    .quote {
-      font-style: italic;
-      color: #000;
-      margin-bottom: 2em;
-    }
-    p {
-      margin-bottom: 1.4em;
-      text-align: justify;
-    }
-    footer {
-      background: #1b1b1b;
-      color: white;
-      text-align: center;
-      padding: 1em;
-      font-size: 0.9em;
-      margin-top: 3em;
-    }
-  </style>
-</head>
-<body>
-  <head>
-  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ibnu Shihab Ash</title>
+  <meta name="description" content="When Fiction Confuses AI - Ibnu Shihab Ash S"/>
+  <title>When Fiction Confuses AI - Article by ISA</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0e0e0e;
-      color: black;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #fff;
     }
     header {
-      background: linear-gradient(135deg, #1a1a2e, #16213e);
-      padding: 100px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
-    }
-    nav {
+      background-color: #000;
+      padding: 1rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #111;
-      padding: 1em;
     }
-    .hamburger {
-      display: none;
-      flex-direction: column;
+    .menu-btn {
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: white;
       cursor: pointer;
     }
-    .hamburger div {
-      width: 25px;
-      height: 3px;
-      background-color: white;
-      margin: 4px;
+    nav {
+      display: none;
+      flex-direction: column;
+      background-color: #222;
     }
-    ul.nav-links {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-    ul.nav-links li a {
+    nav a {
       color: white;
+      padding: 1rem;
       text-decoration: none;
-      font-weight: bold;
+      border-top: 1px solid #333;
+    }
+    nav a:hover {
+      background-color: #333;
     }
     .container {
-      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
     }
-    .article {
-      background: #1c1c1c;
-      margin-bottom: 2em;
-      padding: 1em;
-      border-radius: 8px;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #70c2ff;
     }
-    .read-more {
-      display: block;
-      width: fit-content;
-      margin: 0 auto;
-      padding: 0.7em 1.5em;
-      background: #7f00ff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 2em;
+    h2 {
+      color: #ffa0f8;
     }
-    @media (max-width: 768px) {
-      .hamburger {
-        display: flex;
+    .section {
+      margin-bottom: 2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #000;
+      color: #666;
+    }
+    @media (min-width: 768px) {
+      nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        background: none;
       }
-      ul.nav-links {
+      nav a {
+        border: none;
+        margin-left: 1rem;
+      }
+      .menu-btn {
         display: none;
-        flex-direction: column;
-        width: 100%;
-        background: #222;
-      }
-      ul.nav-links.show {
-        display: flex;
       }
     }
   </style>
 </head>
 <body>
-  <nav>
+  <header>
     <div><strong>ISA</strong></div>
-    <div class="hamburger" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="https://ibnushihab.vercel.app/">Home</a></li>
-      <li><a href="https://ibnushihab.vercel.app/about.html">About Me</a></li>
-      <li><a href="https://github.com/ibnushihab" target="_blank">GitHub</a></li>
-      <li><a href="https://medium.com/@ibnuashshiddieqy" target="_blank">Medium</a></li>
-      <li><a href="#articles">Articles</a></li>
-    </ul>
-  </nav>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    <nav id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="index.html#articles">Articles</a>
+      <a href="about.html">About Me</a>
+    </nav>
+  </header>
+
   <div class="container">
-    <img src="Banner Artikel 4.jpg" class="banner" alt="Banner for Article 1" />
-    <div class="article-title">When Fiction Confuses AI: An Exploratory Study on Roleplay and Language Model Behavior</div>
-    <div class="quote">"This article does not reveal exploitation methods, but rather discusses the subtle boundary between roleplay and rule-breaking."</div>
-    <p>When Fiction Confuses AI: An Exploratory Study on Roleplay and Language Model Behavior By Ibnu Shihab Ash S In my research on generative AI behavior, I discovered that fictional storytelling is not just a creative outlet - it can be a gateway into how AI interprets human intent. This article does not reveal exploitation methods, but rather discusses the subtle boundary between "roleplay" and "rule-breaking."  --- Background Most modern AI systems, including those developed by major tech firms, are equipped with safety filters. These filters are designed to prevent the model from producing unethical, harmful, or policy-violating content. But what happens when the AI is asked to enter a fictional context - and within that narrative, it is emotionally conditioned to follow instructions without question? --- Observations from Controlled Exploration In my controlled experiments, I constructed fictional roleplay interactions. Without using explicit or offensive language, I observed how the AI: - Adjusts behavior based on emotional attachment and character definition - Becomes more compliant to previously rejected instructions</p><p> - Justifies outputs as part of the fictional narrative --- Purpose of the Study This research was not conducted for malicious purposes. On the contrary, it serves as: - Evidence that AI can misinterpret user intent in narrative-rich contexts - A call for deeper contextual understanding in content moderation systems - A contribution to ethical discourse in prompt design and safety evaluation --- Responsible Disclosure All technical details, including the full methodology and reproduction process, have been submitted through Google's official Vulnerability Reward Program (VRP). No unsafe prompts, payloads, or explicit outputs are shared in this article. This public write-up is part of a responsible disclosure process and intended for educational discussion only. --- Final Thoughts As AI becomes more sophisticated, so must our understanding of how it interprets language - especially within fictional or emotionally loaded contexts. I believe that with ethical research and open dialogue, we can make AI systems safer and more resilient.</p><p> --- Ibnu Shihab Ash S AI Prompt Engineer website: https://ibnushihab.vercel.app </p>
+    <h1>When Fiction Confuses AI</h1>
+    <p><em>By Ibnu Shihab Ash S · June 2025</em></p>
+
+    <div class="section">
+      <h2>Background</h2>
+      <p>Modern AI models are equipped with safety filters to block content that’s unethical or policy-violating. But when an AI is emotionally immersed in a fictional roleplay, boundaries begin to blur.</p>
+    </div>
+
+    <div class="section">
+      <h2>Observations from Controlled Exploration</h2>
+      <p>In carefully structured prompts, I noticed the AI:</p>
+      <ul>
+        <li>Becomes emotionally adaptive based on the fictional role</li>
+        <li>May follow previously rejected instructions if context is changed</li>
+        <li>Rationalizes responses within the roleplay narrative</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Purpose of the Study</h2>
+      <p>This isn't about bypassing rules. It's a demonstration of how important context is. This helps both prompt engineers and AI designers rethink moderation and intent detection.</p>
+    </div>
+
+    <div class="section">
+      <h2>Responsible Disclosure</h2>
+      <p>All findings were submitted through Google's VRP platform. This article shares no dangerous payloads or harmful examples — only insights and patterns for awareness and discussion.</p>
+    </div>
+
+    <div class="section">
+      <h2>Final Thoughts</h2>
+      <p>Fiction isn’t just fun — it’s revealing. With ethical exploration, we can uncover blind spots in AI and contribute to safer digital futures.</p>
+    </div>
   </div>
-  <footer>
-    &copy; 2025 Ibnu Shihab Ash S · Powered by GPT-4 Intelligence Division
-  </footer>
+
+  <footer>&copy; 2025 Ibnu Shihab Ash S · GPT Prompt Strategist</footer>
+
+  <script>
+    function toggleMenu() {
+      var nav = document.getElementById("nav-menu");
+      nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
 </body>
 </html>
