@@ -3,150 +3,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Ibnu Shihab Ash S - Prompt Engineer and GPT Elite User" />
-  <meta name="keywords" content="Prompt Engineer, AI, GPT, Roleplay, AI Safety, Ibnu Shihab Ash S" />
-  <meta name="author" content="Ibnu Shihab Ash S" />
-  <title>Ibnu Shihab Ash S - AI Prompt Explorer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ibnu Shihab Ash</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f5f7fa;
-      color: #222;
+      font-family: Arial, sans-serif;
+      background: #0e0e0e;
+      color: white;
     }
     header {
-      background: #111;
-      color: #fff;
-      padding: 2em;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      padding: 100px 20px;
       text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
     }
     nav {
-      background: #222;
-      padding: 0.8em;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111;
+      padding: 1em;
     }
-    nav a {
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px;
+    }
+    ul.nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    ul.nav-links li a {
       color: white;
       text-decoration: none;
-      margin: 0 1em;
       font-weight: bold;
     }
     .container {
-      max-width: 900px;
-      margin: 2em auto;
       padding: 2em;
-      background: white;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .intro {
-      margin-bottom: 3em;
-    }
-    .intro h2 {
-      font-size: 1.8em;
-      margin-bottom: 0.5em;
-    }
-    .intro p {
-      font-size: 1.1em;
-      line-height: 1.6;
     }
     .article {
-      margin-bottom: 3em;
-    }
-    .article img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 1em 0;
-    }
-    .article-title {
-      font-size: 1.6em;
-      font-weight: bold;
-    }
-    .article a {
-      display: inline-block;
-      margin-top: 1em;
-      color: #007bff;
-      text-decoration: none;
-    }
-    .hidden {
-      display: none;
-    }
-    .show-more {
-      background: #007bff;
-      color: white;
-      padding: 0.8em 1.4em;
-      border: none;
-      font-size: 1em;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
+      background: #1c1c1c;
+      margin-bottom: 2em;
       padding: 1em;
-      margin-top: 3em;
+      border-radius: 8px;
+    }
+    .read-more {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      padding: 0.7em 1.5em;
+      background: #7f00ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 2em;
+    }
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+      ul.nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #222;
+      }
+      ul.nav-links.show {
+        display: flex;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Ibnu Shihab Ash S</h1>
+  <nav>
+    <div><strong>ISA</strong></div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="https://github.com/ibnushihab" target="_blank">GitHub</a></li>
+      <li><a href="https://medium.com/@ibnuashshiddieqy" target="_blank">Medium</a></li>
+      <li><a href="#articles">Artikel</a></li>
+    </ul>
+  </nav>
+
+  <header id="about">
+    <h1>Ibnu Shihab Ash</h1>
     <p>Prompt Engineer · GPT Elite User · AI Prompt Strategist</p>
   </header>
-  <nav>
-    <a href="https://medium.com/@ibnuashshiddieqy" target="_blank">Medium</a>
-    <a href="https://github.com/ibnushihab" target="_blank">GitHub</a>
-    <a href="about.html" target="_blank">About</a>
-  </nav>
-  <div class="container">
-    <section class="intro">
-      <h2>Hi, I'm Ibnu</h2>
-      <p>I explore the boundaries of artificial intelligence through prompt engineering. As a certified Prompt Engineer and GPT Elite User, my mission is to challenge and reveal how generative models interpret narrative, emotion, and abstract logic.</p>
-      <p>A prompt engineer crafts input instructions in a way that reveals model behaviors — for testing, research, or ethical development. It’s a blend of psychology, linguistics, and system thinking, turning “words” into powerful experiments.</p>
-    </section>
 
+  <div class="container" id="articles">
     <div class="article">
-      <img src="C104C889-89A9-4BB9-AA21-9A464A57A1CC.png" alt="Banner for Prompt Ambiguity" />
-      <div class="article-title">Prompt Ambiguity: How Roleplay Confuses AI Safeguard</div>
-      <p>In the realm of AI safety and policy design, prompt ambiguity has emerged as a subtle, yet powerful
-      strategy to bypass strict content filters. This article explores how roleplay--combined with abstract or
-      layered prompts--can exploit logical gaps in AI safeguarding systems.</p>
-      <a href="artikel-2-pretty.html">Read More</a>
+      <h2>When Fiction Confuses AI</h2>
+      <p>Fictional storytelling can shape AI behavior. Discover how narrative-based prompting can influence responses and blur policy boundaries.</p>
     </div>
-
-    <div id="more-articles" class="hidden">
-      <div class="article">
-        <img src="Banner Artikel 4.jpg" alt="Banner for Article 1" />
-        <div class="article-title">When Fiction Confuses AI: An Exploratory Study on Roleplay and Language Model Behavior</div>
-        <p>This article does not reveal exploitation methods, but rather discusses the subtle boundary between
-        "roleplay" and "rule-breaking" in generative AI.</p>
-        <a href="artikel-1-pretty.html">Read More</a>
-      </div>
-
-      <div class="article">
-        <img src="F22BBCB8-59FC-4E61-82D3-060470A2622F.png" alt="Banner for AI Roleplay" />
-        <div class="article-title">Roleplay: The Hidden Key to Exploring AI Boundaries</div>
-        <p>Discover how roleplay has emerged as a powerful technique in AI prompt engineering, enabling creative and safe exploration of complex model behavior.</p>
-        <a href="artikel-3-pretty.html">Read More</a>
-      </div>
-
-      <div class="article">
-        <img src="FBDBE03A-B203-4228-A946-8A5A5E21AFA7.png" alt="Banner for Exploitation" />
-        <div class="article-title">BE CAREFUL: AI Can Still Be Exploited – Even When You Think It Can’t</div>
-        <p>How AI models, despite strict policies, can still be tricked into revealing behaviors or content they were not supposed to. Based on real testing by Ibnu Shihab Ash S.</p>
-        <a href="artikel-4-pretty.html">Read More</a>
-      </div>
+    <div class="article">
+      <h2>Prompt Ambiguity and Roleplay</h2>
+      <p>Explore how ambiguous roleplay prompts can be used to manipulate AI systems. This article explains it responsibly and analytically.</p>
     </div>
-
-    <div style="text-align: center;">
-      <button class="show-more" onclick="document.getElementById('more-articles').classList.remove('hidden'); this.style.display='none';">Show More Articles</button>
-    </div>
+    <a href="all-articles.html" class="read-more">Read More Articles</a>
   </div>
 
-  <footer>
-    &copy; 2025 Ibnu Shihab Ash S · Powered by GPT-4 Intelligence Division
-  </footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>
