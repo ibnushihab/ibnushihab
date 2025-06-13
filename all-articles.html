@@ -4,129 +4,130 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ibnu Shihab Ash</title>
+  <meta name="description" content="All articles by Ibnu Shihab Ash S - Certified Prompt Engineer & GPT Explorer."/>
+  <title>All Articles - Ibnu Shihab Ash S</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0e0e0e;
-      color: white;
+      background-color: #121212;
+      color: #fff;
     }
     header {
-      background: linear-gradient(135deg, #1a1a2e, #16213e);
-      padding: 100px 20px;
+      background-color: #1f1f1f;
+      padding: 1em;
       text-align: center;
     }
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
-    }
     nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #111;
-      padding: 1em;
+      background-color: #222;
+      padding: 0.5em;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     .hamburger {
-      display: none;
-      flex-direction: column;
+      display: block;
       cursor: pointer;
     }
-    .hamburger div {
-      width: 25px;
-      height: 3px;
-      background-color: white;
-      margin: 4px;
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #333;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 3.5em;
     }
-    ul.nav-links {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-    ul.nav-links li a {
+    .nav-links a {
       color: white;
+      padding: 1em;
       text-decoration: none;
-      font-weight: bold;
+      border-top: 1px solid #444;
+    }
+    .nav-links a:hover {
+      background-color: #444;
+    }
+    .show {
+      display: flex;
     }
     .container {
-      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+      padding: 2em 1em;
     }
     .article {
-      background: #1c1c1c;
+      background-color: #1e1e1e;
       margin-bottom: 2em;
       padding: 1em;
       border-radius: 8px;
     }
-    .read-more {
-      display: block;
-      width: fit-content;
-      margin: 0 auto;
-      padding: 0.7em 1.5em;
-      background: #7f00ff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 2em;
+    .article img {
+      max-width: 100%;
+      border-radius: 4px;
     }
-    @media (max-width: 768px) {
-      .hamburger {
-        display: flex;
-      }
-      ul.nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: #222;
-      }
-      ul.nav-links.show {
-        display: flex;
-      }
+    .article-title {
+      font-size: 1.5em;
+      margin: 0.5em 0;
+    }
+    .article p {
+      color: #ccc;
+    }
+    .article a {
+      display: inline-block;
+      margin-top: 1em;
+      color: #4ea1f3;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <div><strong>ISA</strong></div>
-    <div class="hamburger" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="https://ibnushihab.vercel.app/">Home</a></li>
-      <li><a href="https://ibnushihab.vercel.app/about.html">About Me</a></li>
-      <li><a href="https://github.com/ibnushihab" target="_blank">GitHub</a></li>
-      <li><a href="https://medium.com/@ibnuashshiddieqy" target="_blank">Medium</a></li>
-      <li><a href="#articles">Articles</a></li>
-    </ul>
-  </nav>
-
   <header>
     <h1>All Articles</h1>
-    <p>By Ibnu Shihab Ash</p>
+    <p>Explore all articles by Ibnu Shihab Ash S</p>
   </header>
+  <nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">ISA (Homepage)</a>
+      <a href="index.html#articles">Articles</a>
+      <a href="about.html">About Me</a>
+    </div>
+  </nav>
   <div class="container">
     <div class="article">
-      <h2>When Fiction Confuses AI</h2>
-      <p>Exploring how storytelling affects AI interpretation and safety behavior.</p>
+      <img src="Banner Artikel 4.jpg" alt="Banner for Article 4"/>
+      <div class="article-title">When Fiction Confuses AI</div>
+      <p>An exploratory study on roleplay and language model behavior.</p>
       <a href="artikel-1-pretty.html">Read More</a>
     </div>
+
     <div class="article">
-      <h2>Prompt Ambiguity: Roleplay Confuses Safeguards</h2>
-      <p>Analysis of layered prompts and how roleplay bypasses AI restrictions.</p>
+      <img src="C104C889-89A9-4BB9-AA21-9A464A57A1CC.png" alt="Prompt Ambiguity"/>
+      <div class="article-title">Prompt Ambiguity</div>
+      <p>How roleplay confuses AI safeguards in modern LLMs.</p>
       <a href="artikel-2-pretty.html">Read More</a>
     </div>
+
     <div class="article">
-      <h2>Roleplay: Hidden Key to Exploring AI Boundaries</h2>
-      <p>Harnessing creative scenarios to safely test generative model limits.</p>
+      <img src="F22BBCB8-59FC-4E61-82D3-060470A2622F.png" alt="AI Roleplay"/>
+      <div class="article-title">Roleplay: The Hidden Key</div>
+      <p>Explore how roleplay enables creative AI prompt engineering.</p>
       <a href="artikel-3-pretty.html">Read More</a>
     </div>
+
     <div class="article">
-      <h2>BE CAREFUL: AI Can Still Be Exploited</h2>
-      <p>Insights on vulnerabilities in AI even under strict safety protocols.</p>
+      <img src="FBDBE03A-B203-4228-A946-8A5A5E21AFA7.png" alt="Hidden Weakness"/>
+      <div class="article-title">The Hidden Weakness of AI</div>
+      <p>Real-world prompt experiments reveal surprising AI behaviors.</p>
       <a href="artikel-4-pretty.html">Read More</a>
     </div>
   </div>
+
+  <script>
+    function toggleMenu() {
+      var links = document.getElementById("navLinks");
+      links.classList.toggle("show");
+    }
+  </script>
 </body>
 </html>
