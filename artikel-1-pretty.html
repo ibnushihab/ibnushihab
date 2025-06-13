@@ -71,15 +71,105 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Ibnu Shihab Ash S</h1>
-    <p>Certified Prompt Engineer · GPT Elite User · AI Prompt Strategist</p>
-  </header>
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ibnu Shihab Ash</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0e0e0e;
+      color: white;
+    }
+    header {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      padding: 100px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111;
+      padding: 1em;
+    }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 4px;
+    }
+    ul.nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    ul.nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 2em;
+    }
+    .article {
+      background: #1c1c1c;
+      margin-bottom: 2em;
+      padding: 1em;
+      border-radius: 8px;
+    }
+    .read-more {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      padding: 0.7em 1.5em;
+      background: #7f00ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 2em;
+    }
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+      ul.nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #222;
+      }
+      ul.nav-links.show {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="https://medium.com/@ibnuashshiddieqy" target="_blank">Medium</a>
-    <a href="https://github.com/ibnushihab" target="_blank">GitHub</a>
-    <a href="about.html" target="_blank">About</a>
+    <div><strong>ISA</strong></div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="https://ibnushihab.vercel.app/">Home</a></li>
+      <li><a href="https://ibnushihab.vercel.app/about.html">About Me</a></li>
+      <li><a href="https://github.com/ibnushihab" target="_blank">GitHub</a></li>
+      <li><a href="https://medium.com/@ibnuashshiddieqy" target="_blank">Medium</a></li>
+      <li><a href="#articles">Articles</a></li>
+    </ul>
   </nav>
   <div class="container">
     <img src="Banner Artikel 4.jpg" class="banner" alt="Banner for Article 1" />
