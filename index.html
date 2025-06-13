@@ -3,126 +3,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ibnu Shihab Ash</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ibnu Shihab Ash - Homepage</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0e0e0e;
-      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
     }
-    header {
-      background: linear-gradient(135deg, #1a1a2e, #16213e);
-      padding: 100px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #111;
+    header, nav, section, footer {
       padding: 1em;
     }
     .hamburger {
-      display: none;
-      flex-direction: column;
+      position: fixed;
+      top: 1em;
+      right: 1em;
       cursor: pointer;
+      z-index: 1000;
     }
     .hamburger div {
       width: 25px;
       height: 3px;
       background-color: white;
-      margin: 4px;
+      margin: 5px;
     }
-    ul.nav-links {
-      list-style: none;
-      display: flex;
-      gap: 20px;
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #111;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 100%;
+      padding-top: 60px;
+      z-index: 999;
     }
-    ul.nav-links li a {
+    .menu a {
       color: white;
+      padding: 1em;
       text-decoration: none;
-      font-weight: bold;
+      border-bottom: 1px solid #444;
     }
-    .container {
+    .intro {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #1e1e2f, #0d0d0d);
+    }
+    .articles-section {
       padding: 2em;
+      background-color: #1a1a1a;
     }
     .article {
-      background: #1c1c1c;
       margin-bottom: 2em;
-      padding: 1em;
-      border-radius: 8px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 1em;
     }
     .read-more {
-      display: block;
-      width: fit-content;
-      margin: 0 auto;
-      padding: 0.7em 1.5em;
-      background: #7f00ff;
-      color: white;
+      color: #00bfff;
       text-decoration: none;
-      border-radius: 5px;
-      margin-top: 2em;
     }
-    @media (max-width: 768px) {
-      .hamburger {
-        display: flex;
-      }
-      ul.nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: #222;
-      }
-      ul.nav-links.show {
-        display: flex;
+    .show-more {
+      display: block;
+      margin: 2em auto;
+      padding: 1em 2em;
+      background-color: #00bfff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    @media screen and (max-width: 600px) {
+      .intro h1 {
+        font-size: 1.5em;
       }
     }
   </style>
 </head>
 <body>
-  <nav>
-    <div><strong>ISA</strong></div>
-    <div class="hamburger" onclick="toggleMenu()">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="https://ibnushihab.vercel.app/">Home</a></li>
-      <li><a href="https://ibnushihab.vercel.app/about.html">About Me</a></li>
-      <li><a href="https://github.com/ibnushihab" target="_blank">GitHub</a></li>
-      <li><a href="https://medium.com/@ibnuashshiddieqy" target="_blank">Medium</a></li>
-      <li><a href="#articles">Articles</a></li>
-    </ul>
-  </nav>
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div><div></div><div></div>
+  </div>
+  <div class="menu" id="menu">
+    <a href="index.html">ISA (Homepage)</a>
+    <a href="#articles">Articles</a>
+    <a href="about.html">About Me</a>
+  </div>
 
-  <header id="about">
-    <h1>Ibnu Shihab Ash</h1>
-    <p>Prompt Engineer · GPT Elite User · AI Prompt Strategist</p>
-  </header>
+  <section class="intro">
+    <h1>Hello, I'm Ibnu Shihab Ash</h1>
+    <p>Certified Prompt Engineer & AI Prompt Strategist. I build ideas into AI-driven experiences using the power of language and imagination.</p>
+  </section>
 
-  <div class="container" id="articles">
+  <section class="articles-section" id="articles">
     <div class="article">
       <h2>When Fiction Confuses AI</h2>
-      <p>Fictional storytelling can shape AI behavior. Discover how narrative-based prompting can influence responses and blur policy boundaries.</p>
+      <p>Exploring how storytelling and emotional roleplay can manipulate AI language models into bypassing their own safeguards.</p>
+      <a class="read-more" href="artikel-1-pretty.html">Read More</a>
     </div>
     <div class="article">
-      <h2>Prompt Ambiguity and Roleplay</h2>
-      <p>Explore how ambiguous roleplay prompts can be used to manipulate AI systems. This article explains it responsibly and analytically.</p>
+      <h2>Prompt Ambiguity: How Roleplay Confuses AI Safeguard</h2>
+      <p>How abstract prompt layering and character definition can cause confusion in AI models' decision boundaries.</p>
+      <a class="read-more" href="artikel-2-pretty.html">Read More</a>
     </div>
-    <a href="all-articles.html" class="read-more">Read More Articles</a>
-  </div>
+    <button class="show-more" onclick="window.location.href='all-articles.html'">Show More</button>
+  </section>
 
   <script>
     function toggleMenu() {
-      const nav = document.getElementById('navLinks');
-      nav.classList.toggle('show');
+      var menu = document.getElementById('menu');
+      if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'flex';
+      }
     }
   </script>
 </body>
