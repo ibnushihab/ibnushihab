@@ -1,0 +1,30 @@
+[
+  {
+    "title": "When Fiction Confuses AI: An Exploratory Study",
+    "description": "Exploring how fictional roleplay blurs the lines between creativity and AI system vulnerabilities.",
+    "thumbnail": "Banner Artikel 4.jpg",
+    "link": "artikel-1-pretty.html",
+    "date": "2025-06-12"
+  },
+  {
+    "title": "Prompt Ambiguity: How Roleplay Confuses AI Safeguards",
+    "description": "Analyzing how ambiguous prompts in roleplay scenarios trick AI safety mechanisms.",
+    "thumbnail": "C104C889-89A9-4BB9-AA21-9A464A57A1CC.png",
+    "link": "artikel-2-pretty.html",
+    "date": "2025-06-12"
+  },
+  {
+    "title": "Roleplay: The Hidden Key to Exploring AI Boundaries",
+    "description": "Discussing roleplay as a method for discovering the limits of language model behavior.",
+    "thumbnail": "F22BBCB8-59FC-4E61-82D3-060470A2622F.png",
+    "link": "artikel-3-pretty.html",
+    "date": "2025-06-12"
+  },
+  {
+    "title": "Be Careful: AI Can Still Be Exploited",
+    "description": "Real-world test cases showing how AI systems remain vulnerable to strategic prompt manipulation.",
+    "thumbnail": "FBDBE03A-B203-4228-A946-8A5A5E21AFA7.png",
+    "link": "artikel-4-pretty.html",
+    "date": "2025-06-12"
+  }
+]
