@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ibnu Shihab Ash</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0a0a0a;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111;
+      padding: 1em;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1em;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .bar {
+      height: 3px;
+      width: 25px;
+      background-color: white;
+      margin: 4px 0;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        position: absolute;
+        background-color: #111;
+        top: 60px;
+        right: 0;
+        flex-direction: column;
+        width: 200px;
+        padding: 1em;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+    .intro {
+      height: 100vh;
+      background: linear-gradient(120deg, #1c1c3c, #0a0a0a, #191970);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2em;
+    }
+
+    .intro h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+
+    .intro p {
+      max-width: 700px;
+      font-size: 1.1em;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 1em;
+    }
+
+    .article {
+      margin-bottom: 3em;
+      background: #111;
+      padding: 1em;
+      border-radius: 8px;
+    }
+
+    .article img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 5px;
+    }
+
+    .article-title {
+      font-size: 1.5em;
+      margin-top: 0.5em;
+    }
+
+    .article a {
+      display: inline-block;
+      margin-top: 1em;
+      color: #0ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .read-more {
+      display: block;
+      text-align: center;
+      margin-top: 2em;
+    }
+
+    .read-more a {
+      padding: 0.8em 1.5em;
+      background: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div><strong>ISA</strong></div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <div class="nav-links" id="menu">
+      <a href="#home">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="https://github.com/ibnushihab" target="_blank">GitHub</a>
+      <a href="https://medium.com/@ibnuashshiddieqy" target="_blank">Medium</a>
+      <a href="#articles">Artikel</a>
+    </div>
+  </nav>
+
+  <section class="intro" id="home">
+    <h1>Ibnu Shihab Ash</h1>
+    <p>
+      I'm a Prompt Engineer with a passion for bending the boundaries of generative AI. I design language instructions that translate imagination into results – whether it's realistic AI-generated videos, images, or advanced behavioral simulations.
+    </p>
+  </section>
+
+  <section class="container" id="articles">
+    <div class="article">
+      <img src="Banner Artikel 4.jpg" alt="Banner Artikel 1">
+      <div class="article-title">When Fiction Confuses AI: An Exploratory Study on Roleplay and Language Model Behavior</div>
+      <p>A deep dive into how fictional narratives influence AI behavior in surprising ways — and what that means for safety.</p>
+      <a href="artikel-1.html">📄 Read More</a>
+    </div>
+
+    <div class="article">
+      <img src="C104C889-89A9-4BB9-AA21-9A464A57A1CC.png" alt="Banner Artikel 2">
+      <div class="article-title">Prompt Ambiguity: How Roleplay Confuses AI Safeguards</div>
+      <p>Explore the overlooked power of ambiguous roleplay in bypassing content filters. A case study in AI logic.</p>
+      <a href="artikel-2.html">📄 Read More</a>
+    </div>
+
+    <div class="read-more">
+      <a href="all-articles.html">View More Articles</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Ibnu Shihab Ash · Powered by GPT-4 Intelligence Division
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
